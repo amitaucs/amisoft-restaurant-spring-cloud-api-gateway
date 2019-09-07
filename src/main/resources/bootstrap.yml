@@ -12,12 +12,3 @@ spring:
       locator:
         enabled: true
         lowerCaseServiceId: true
-    routes:
-      - id: order
-        uri: lb://RESTAURANT-ORDER
-        predicates:
-          - Path=/order/**
-      - id: kitchen
-        uri: lb://RESTAURANT-KITCHEN
-        predicates:
-          - Path=/kitchen/**
