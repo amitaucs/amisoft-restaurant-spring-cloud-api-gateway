@@ -14,4 +14,3 @@ spring:
           enabled: true
           lowerCaseServiceId: true
 
-hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 2000
