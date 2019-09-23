@@ -1,8 +1,17 @@
+server:
+  port: 8080
+
 spring:
   application:
     name: ApiGateway
   profiles:
-    active: javaconfig
+    active: config
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
 eureka:
   client:
     serviceUrl:
@@ -18,4 +27,5 @@ management:
       exposure:
         include: "*"
       expose: "*"
+
 
